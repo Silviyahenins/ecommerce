@@ -42,7 +42,7 @@ foreign key (order_id) references orders(order_id),
 product_id int,
 foreign key(product_id) references products(product_id),
 quantity int,
-item_amount varchar(200)
+item_amount decimal(10,2)
 );
 
 insert into customers (customer_id,first_name,last_name,email,address)values
