@@ -165,13 +165,13 @@ select customer_id, COUNT(*) asorder_count
 from orders
 GROUP BY customer_id;
 
--- 13.get Customers Who Placed Orders Totaling Over $1000
+-- 13.Find the Maximum Order Amount for Each Customer.
 
 select customer_id, MAX(total_price) as max_order
 from orders
 GROUP BY customer_id;
 
--- 14.Find the Maximum Order Amount for Each Customer
+-- 14.get Customers Who Placed Orders Totaling Over $1000
 
 select customer_id
 from orders
